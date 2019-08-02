@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic-ext');
+
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+thead{
+    height: 100%;
+
+}
+
+
+/* End of Eric Meyer's CSS Reset */
+
+html {
+    height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+*{
+    -moz-box-sizing: border-box; /* Для Firefox */
+    box-sizing: border-box; /* Ширина блока с полями */
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.header{
+    background: #000;
+    margin-bottom: 50px;
+}
+.header__center{
+    padding: 10px 0;
+    width: 1200px;
+    margin: auto;
+}
+.header__logo-link{
+    color: #fff;
+}
+.field{
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.field__row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.field__cell{
+    width: 80px;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border: 1px solid #000;
+    background: #dadada;
+    font-size: 35px;
+}
+
+.main{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+}
+.status{
+    top: 50%;
+    left:50%;
+    -ms-transform: translate(-50%,-50%); /* IE 9 */
+    -webkit-transform: translate(-50%,-50%); /* Chrome, Safari, Opera */
+    transform: translate(-50%,-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.field__disabled{
+    pointer-events: none;
+    position: relative;
+    &:after{
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(0,0,0,0.6);
+    }
+}
+
+.status{
+    text-align: center;
+}
+
+.status__hint{
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.user-result__hint{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.user-result{
+    margin-bottom: 10px;
+}
+
+.user-result__point{
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.result-game__hint{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.btn{
+    height: 47px;
+    background-color: #ff3f02;
+    padding: 0 26px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    border:0;
+    cursor: pointer;
+    margin: 10px;
+    line-height: 1.2;
+    &:hover{
+        background-color: #ff3d00e3;
+    }
+    &:active{
+        background-color: #ed4008;
+    }
+}
+.note{
+    margin-bottom: 10px;
+}
