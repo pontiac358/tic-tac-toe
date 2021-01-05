@@ -6,7 +6,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.9",
     "@emotion/styled": "^10.0.9",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "node-sass": "^4.12.0",
