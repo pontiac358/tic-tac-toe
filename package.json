@@ -9,7 +9,7 @@
     "axios": "^0.18.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.6.2",
     "ramda": "^0.26.1",
     "react": "^16.8.4",
